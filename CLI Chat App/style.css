@@ -1,0 +1,36 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#cli-chat {
+    background-color: #000;
+    border: 1px solid #555;
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-window {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+#input {
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 5px;
+    outline: none;
+}
