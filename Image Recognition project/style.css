@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+#uploadedImage {
+    max-width: 100%;
+    height: auto;
+    display: none;
+    margin-top: 20px;
+}
+
+#prediction {
+    margin-top: 20px;
+    font-size: 20px;
+}
