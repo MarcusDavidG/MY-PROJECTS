@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Scheduler</title>
+    <link rel="stylesheet" href="/Social Media Scheduler/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Social Media Scheduler</h1>
+      <form id="schedulerForm">
+        <label for="platform">Platform:</label>
+        <select id="platform" required>
+          <option value="Twitter">Twitter</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Instagram">Instagram</option>
+        </select>
+
+        <label for="content">Content:</label>
+        <textarea id="content" rows="4" required></textarea>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required />
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" required />
+
+        <button type="submit">Schedule Post</button>
+      </form>
+
+      <h2>Scheduled Posts</h2>
+      <ul id="scheduledPosts"></ul>
+    </div>
+    <script src="/Social Media Scheduler/script.js"></script>
+  </body>
+</html>
