@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitwise Operators in JavaScript</title>
+  </head>
+  <body>
+    <h1>Bitwise Operators in JavaScript</h1>
+    <p>Open the browser console to see the results.</p>
+    <script>
+      // Example values
+      let a = 7; // 0101 in binary
+      let b = 4; // 0011 in binary
+
+      console.log("a = 7, b = 4");
+      console.log("Binary of a: ", a.toString(2).padStart(4, "0"));
+      console.log("Binary of b: ", b.toString(2).padStart(4, "0"));
+
+      // AND (&) 
+      let andResult = a & b; // 0001 (1 in decimal)
+      console.log(
+        "a & b (AND): ",
+        andResult,
+        "Binary:",
+        andResult.toString(2).padStart(4, "0")
+      );
+
+      // OR (|)
+      let orResult = a | b; // 0111 (7 in decimal)
+      console.log(
+        "a | b (OR): ",
+        orResult,
+        "Binary:",
+        orResult.toString(2).padStart(4, "0")
+      );
+
+      // XOR (^)
+      let xorResult = a ^ b; // 0110 (6 in decimal)
+      console.log(
+        "a ^ b (XOR): ",
+        xorResult,
+        "Binary:",
+        xorResult.toString(2).padStart(4, "0")
+      );
+
+      // NOT (~)
+      let notResult = ~a; // 1010 in two's complement (which is -6 in decimal)
+      console.log(
+        "~a (NOT): ",
+        notResult,
+        "Binary:",
+        notResult.toString(2).padStart(4, "0").slice(-4)
+      );
+
+      // Left Shift (<<)
+      let leftShiftResult = a << 1; // 1010 (10 in decimal)
+      console.log(
+        "a << 1 (Left Shift): ",
+        leftShiftResult,
+        "Binary:",
+        leftShiftResult.toString(2).padStart(4, "0")
+      );
+
+      // Right Shift (>>)
+      let rightShiftResult = a >> 1; // 0010 (2 in decimal)
+      console.log(
+        "a >> 1 (Right Shift): ",
+        rightShiftResult,
+        "Binary:",
+        rightShiftResult.toString(2).padStart(4, "0")
+      );
+    </script>
+  </body>
+</html>
