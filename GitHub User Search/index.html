@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub User Search</title>
+    <link rel="stylesheet" href="/GitHub User Search/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>GitHub User Search</h1>
+      <div class="search-box">
+        <input
+          type="text"
+          id="username-input"
+          placeholder="Enter GitHub username..."
+        />
+        <button id="search-button">Search</button>
+      </div>
+      <div id="user-info" class="user-info hidden">
+        <img id="avatar" src="" alt="User Avatar" />
+        <h2 id="name"></h2>
+        <p id="bio"></p>
+        <p><strong>Repositories:</strong> <span id="repo-count"></span></p>
+        <p><strong>Followers:</strong> <span id="followers"></span></p>
+        <p><strong>Following:</strong> <span id="following"></span></p>
+        <a id="profile-link" href="" target="_blank">View Profile</a>
+      </div>
+      <div id="error-message" class="error-message hidden">
+        User not found. Please try again.
+      </div>
+    </div>
+    <script src="/GitHub User Search/script.js"></script>
+  </body>
+</html>
