@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker App</title>
+    <link rel="stylesheet" href="/Budget Tracker App/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Budget Tracker</h1>
+        <div class="budget-display">
+            <h3>Your Balance</h3>
+            <h1 id="balance">$0.00</h1>
+        </div>
+
+        <div class="income-expense">
+            <div>
+                <h4>Income</h4>
+                <p id="income" class="money plus">+$0.00</p>
+            </div>
+            <div>
+                <h4>Expenses</h4>
+                <p id="expense" class="money minus">-$0.00</p>
+            </div>
+        </div>
+
+        <h3>Add new transaction</h3>
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Transaction Name</label>
+                <input type="text" id="text" placeholder="Enter transaction name">
+            </div>
+            <div class="form-control">
+                <label for="amount">Amount <br> (negative - expense, positive - income)</label>
+                <input type="number" id="amount" placeholder="Enter amount">
+            </div>
+            <button class="btn">Add Transaction</button>
+        </form>
+
+        <h3>Transaction History</h3>
+        <ul id="list" class="list"></ul>
+    </div>
+
+    <script src="/Budget Tracker App/script.js"></script>
+</body>
+</html>
